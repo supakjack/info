@@ -1,9 +1,9 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-     <b-button variant="info" class="m-1">
-      Show dismissible alert ({{ showDismissibleAlert ? 'visible' : 'hidden' }})
+    <b-img rounded="circle" alt="Circle image" src="../assets/profile.png"></b-img>
+    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <b-button variant="info" class="m-1">
+      Show dismissible alert )
     </b-button>
   </div>
 </template>
@@ -15,7 +15,11 @@ import HelloWorld from '@/components/HelloWorld.vue'
 export default {
   name: 'Home',
   components: {
-    HelloWorld
-  }
+    HelloWorld,
+  },
+  data() {
+    return {
+    }
+  },
 }
 </script>
