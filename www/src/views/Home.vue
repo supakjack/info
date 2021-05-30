@@ -1,25 +1,23 @@
 <template>
-  <div class="home">
-    <b-img rounded="circle" alt="Circle image" src="../assets/profile.png"></b-img>
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-    <b-button variant="info" class="m-1">
-      Show dismissible alert )
-    </b-button>
+  <div>
+    <Carousel />
+    <Timeline />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Carousel from '@/components/Carousel.vue'
+import Timeline from '@/components/Timeline.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld,
+    Carousel,
+    Timeline
   },
   data() {
-    return {
-    }
+    return {}
   },
 }
 </script>
