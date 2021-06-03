@@ -1,12 +1,12 @@
 <template>
   <b-navbar toggleable="lg" variant="dark">
-    <b-navbar-brand to="/" class="ml-5"><span class="text-light">SupakJack</span></b-navbar-brand>
+    <b-navbar-brand to="/" ><span class="text-light">SupakJack</span></b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
     <b-collapse id="nav-collapse" is-nav>
       <!-- Right aligned nav items -->
-      <b-navbar-nav class="ml-auto mr-5">
+      <b-navbar-nav class="ml-auto ">
         <b-navbar-nav>
           <b-nav-item to="/"><span class="text-light">หน้าแรก</span></b-nav-item>
           <b-nav-item to="/about"><span class="text-light">ประวัติ</span></b-nav-item>
