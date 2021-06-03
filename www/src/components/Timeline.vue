@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <h4 class="text-center mt-1 ml-1">รางวัล</h4>
     <div class="main-timeline">
       <!-- start experience section-->
       <div class="timeline">
@@ -20,8 +21,8 @@
             ประชุมวิชาการปริญญาตรีด้านคอมพิวเตอร์ภูมิภาคเอเชีย ครั้งที่ 9
           </h5>
           <p class="description">
-            ได้รับรางวัลการนาเสนอผลงานวิจัยภาคบรรยาย EXCELLENT PAPER AWARDS
-            ผลงานเรื่อง “ระบบการจัดการสิทธิ์การใชงาน Joget”
+            - รางวัล "EXCELLENT PAPER AWARDS" จากผลงานวิจัยภาคบรรยายเรื่อง
+            “ระบบการจัดการสิทธิ์การใชงาน Joget”
           </p>
         </div>
       </div>
@@ -42,10 +43,7 @@
           <h5 class="title">แข่งขันโครงงานคอมพิวเตอร์ประเภทซอฟต์แวร์</h5>
           <h5 class="title">งานศิลปหัตถกรรมนักเรียน ครั้งที่ 66</h5>
           <p class="description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat
-            volutpat. Aenean interdum finibus efficitur. Praesent dapibus dolor
-            felis, eu ultrices elit molestie.
+            - รางวัลเหรียญทองระดับจังหวัด (จ.ประจวบฯ)
           </p>
         </div>
       </div>
@@ -66,10 +64,8 @@
           <h5 class="title">แข่งขันการเขียนโปรแกรมด้วยภาษาคอมพิวเตอร์</h5>
           <h5 class="title">งานศิลปหัตถกรรมนักเรียน ครั้งที่ 65</h5>
           <p class="description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat
-            volutpat. Aenean interdum finibus efficitur. Praesent dapibus dolor
-            felis, eu ultrices elit molestie.
+            - รางวัลเหรียญทองชนะเลิศระดับจังหวัด (จ.ประจวบฯ) <br />
+            - รางวัลเหรียญทองแดงระดับภูมิภาค (ภาคกลางและภาคตะวันออก)
           </p>
         </div>
       </div>
@@ -89,10 +85,7 @@
         <div class="timeline-content">
           <h5 class="title">โครงการ KMITL INNOVATIVE AWARD 2014</h5>
           <p class="description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat
-            volutpat. Aenean interdum finibus efficitur. Praesent dapibus dolor
-            felis, eu ultrices elit molestie.
+            - เข้าร่วมประกวดรอบ 10 ทีมสุดท้าย ณ ศูนย์การค้าเซ็นทรัลเวิลด์
           </p>
         </div>
       </div>
