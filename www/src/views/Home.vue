@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Carousel />
+    <!-- <Carousel /> -->
     <Profile />
     <Timeline />
   </div>
@@ -8,14 +8,14 @@
 
 <script>
 // @ is an alias to /src
-import Carousel from '@/components/Carousel.vue'
+// import Carousel from '@/components/Carousel.vue'
 import Timeline from '@/components/Timeline.vue'
 import Profile from '@/components/Profile.vue'
 
 export default {
   name: 'Home',
   components: {
-    Carousel,
+    // Carousel,
     Timeline,
     Profile
   },
