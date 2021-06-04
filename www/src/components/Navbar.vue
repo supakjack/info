@@ -5,7 +5,12 @@
     fixed="top"
   >
     <b-navbar-brand to="/"
-      ><span class="text-dark">SUPAKJACK</span></b-navbar-brand
+      >
+      
+      <img src="@/assets/top-profile.png" class="rounded-circle" style="max-width:20px"> |
+      <span class="text-dark">{{" "}}SUPAKJACK</span>
+      
+      </b-navbar-brand
     >
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -14,7 +19,7 @@
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto ">
         <b-navbar-nav>
-          <b-nav-item to="/"><span class="text-dark">หน้าแรก</span></b-nav-item>
+          <b-nav-item to="/"><span class="text-dark">หน้าหลัก</span></b-nav-item>
           <b-nav-item to="/about"
             ><span class="text-dark">เกี่ยวกับ</span></b-nav-item
           >
@@ -25,7 +30,7 @@
             ><span class="text-dark">ติดตาม</span></b-nav-item
           >
           <b-nav-item to="/about"
-            ><span class="text-dark">ติดต่อ</span></b-nav-item
+            ><span class="text-dark">ติดต่อ/สอบถาม</span></b-nav-item
           >
         </b-navbar-nav>
       </b-navbar-nav>
