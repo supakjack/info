@@ -1,33 +1,92 @@
 <template>
   <div>
-    <b-card no-body class="overflow-hidden border-0">
-      <b-row no-gutters>
-        <b-col md="12" class="text-center">
-          <b-card-body title="บริการ">
-            <hr style="max-width:5rem" class="col-2 border-1 border-dark border-bottom"/>
-          </b-card-body>
-        </b-col>
-        <b-col md="12" class="text-center">
-          <b-img
-            src="@/assets/top-profile.png"
-            alt="Image"
-            class="rounde p-2 rounded-pill"
-          ></b-img>
-        </b-col>
-        <b-col md="12" class="text-center">
-          <b-card-body title="">
-            <b-card-text>
-              <p>
-                นายสุภัค พุกดำ
-              </p>
-              <p>
-                เกียรตินิยมอันดับ 1 วิศวกรรมซอฟต์แวร์ มหาวิทยาลัยบูรพา
-              </p>
-            </b-card-text>
-          </b-card-body>
-        </b-col>
-      </b-row>
-    </b-card>
+    <b-row class="d-flex justify-content-center">
+      <b-col md="12" class="text-center pt-5">
+        <b-card-body title="บริการ">
+          <hr
+            style="max-width:5rem"
+            class="col-2 border-1 border-dark border-bottom"
+          />
+        </b-card-body>
+      </b-col>
+      <b-col md="6" lg="4" class="text-center p-5">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">ติวเตอร์และให้คำปรึกษา</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">
+              300 บาท <small class="text-muted">/ ชั่วโมง</small>
+            </h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>การเขียนโปรแกรมและการพัฒนาระบบ</li>
+              <li>วิเคราะห์และออกแบบระบบ</li>
+              <li>วิชาที่เกี่ยวข้องกับวิศวกรรมซอฟต์แวร์</li>
+            </ul>
+            <button
+              type="button"
+              class="btn btn-lg btn-block btn-outline-primary"
+            >
+              Sign up for free
+            </button>
+          </div>
+        </div>
+      </b-col>
+      <b-col md="6" lg="4" class="text-center p-5">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">
+              พัฒนาระบบและเว็บไซต์
+            </h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">
+              <small class="text-muted">เริ่มต้น</small> 4,000 บาท
+            </h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>
+                รองรับ Php , Codeigniter , Node.js , Vue.js
+              </li>
+              <li>พัฒนาเว็บไซต์หน้าเดียวบน GitHub Page</li>
+              <li>พัฒนา Web API และ Web Service</li>
+            </ul>
+            <button
+              type="button"
+              class="btn btn-lg btn-block btn-outline-primary"
+            >
+              Sign up for free
+            </button>
+          </div>
+        </div>
+      </b-col>
+      <b-col md="6" lg="4" class="text-center p-5">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">
+              เขียนโปรแกรม
+            </h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">
+              <small class="text-muted">เริ่มต้น</small> 500 บาท
+            </h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>
+                เขียนโปรแกมภาษา Php , C , C++ และ JavaScript
+              </li>
+              <li>สร้าง Console Application</li>
+              <li>เขียนฟังก์ชั่นการทำงานต่าง ๆ </li>
+            </ul>
+            <button
+              type="button"
+              class="btn btn-lg btn-block btn-outline-primary"
+            >
+              Sign up for free
+            </button>
+          </div>
+        </div>
+      </b-col>
+    </b-row>
   </div>
 </template>
 
