@@ -11,19 +11,19 @@
 import Navbar from '@/components/Navbar'
 export default {
   components: {
-    Navbar,
-  },
+    Navbar
+  }
 }
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@1,200');
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@500&display=swap');
 html,
 body {
-  font-family: 'Sarabun', sans-serif;
+  font-family: 'Athiti', sans-serif;
 }
 
 #app {
-  font-family: 'Sarabun', sans-serif;
+  font-family: 'Athiti', sans-serif;
 }
 </style>

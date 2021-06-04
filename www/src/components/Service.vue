@@ -3,11 +3,8 @@
     <b-card no-body class="overflow-hidden border-0">
       <b-row no-gutters>
         <b-col md="12" class="text-center">
-          <b-card-body title="เกี่ยวกับ">
-            <hr
-              style="max-width:5rem"
-              class="col-2 border-1 border-dark border-bottom"
-            />
+          <b-card-body title="บริการ">
+            <hr style="max-width:5rem" class="col-2 border-1 border-dark border-bottom"/>
           </b-card-body>
         </b-col>
         <b-col md="12" class="text-center">
@@ -20,11 +17,12 @@
         <b-col md="12" class="text-center">
           <b-card-body title="">
             <b-card-text>
-              <span class="name-profile">นายสุภัค พุกดำ</span>
-              <br />
-              <span class="edu-hilight">เกียรตินิยมอันดับ 1 </span
-              >วิศวกรรมซอฟต์แวร์ <br />
-              มหาวิทยาลัยบูรพา
+              <p>
+                นายสุภัค พุกดำ
+              </p>
+              <p>
+                เกียรตินิยมอันดับ 1 วิศวกรรมซอฟต์แวร์ มหาวิทยาลัยบูรพา
+              </p>
             </b-card-text>
           </b-card-body>
         </b-col>
@@ -37,11 +35,4 @@
 export default {}
 </script>
 
-<style scoped>
-.name-profile {
-  font-size: 1.5rem;
-}
-.edu-hilight {
-  font-weight: bold;
-}
-</style>
+<style></style>

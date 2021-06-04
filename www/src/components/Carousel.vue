@@ -7,7 +7,7 @@
     indicators
     background="#ababab"
     img-width="1024"
-    img-height="320"
+    img-height="400"
     style="text-shadow: 1px 1px 2px #333;"
     @sliding-start="onSlideStart"
     @sliding-end="onSlideEnd"
@@ -16,17 +16,17 @@
     <b-carousel-slide
       caption="First slide"
       text="Nulla vitae elit libero, a pharetra augue mollis interdum."
-      img-src="https://picsum.photos/1024/320/?image=52"
+      img-src="https://picsum.photos/1024/400/?image=52"
     ></b-carousel-slide>
 
     <!-- Slides with custom text -->
-    <b-carousel-slide img-src="https://picsum.photos/1024/320/?image=54">
+    <b-carousel-slide img-src="https://picsum.photos/1024/400/?image=54">
       <h1>Hello world!</h1>
     </b-carousel-slide>
 
     <!-- Slides with image only -->
     <b-carousel-slide
-      img-src="https://picsum.photos/1024/320/?image=58"
+      img-src="https://picsum.photos/1024/400/?image=58"
     ></b-carousel-slide>
 
     <!-- Slides with img slot -->
@@ -36,8 +36,8 @@
         <img
           class="d-block img-fluid w-100"
           width="1024"
-          height="320"
-          src="https://picsum.photos/1024/320/?image=55"
+          height="400"
+          src="https://picsum.photos/1024/400/?image=55"
           alt="image slot"
         />
       </template>

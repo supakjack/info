@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <h4 class="text-center mt-1 ml-1">รางวัล</h4>
     <div class="main-timeline">
       <!-- start experience section-->
       <div class="timeline">
@@ -15,14 +14,11 @@
         </div>
         <div class="timeline-content">
           <h5 class="title">
-            The 9th Asia Undergraduate Conference on Computing
-          </h5>
-          <h5 class="title">
-            ประชุมวิชาการปริญญาตรีด้านคอมพิวเตอร์ภูมิภาคเอเชีย ครั้งที่ 9
+            ประชุมวิชาการ AUCC ครั้งที่ 9
           </h5>
           <p class="description">
-            - รางวัล "EXCELLENT PAPER AWARDS" จากผลงานวิจัยภาคบรรยายเรื่อง
-            “ระบบการจัดการสิทธิ์การใชงาน Joget”
+            - รางวัล "EXCELLENT PAPER AWARDS" <br />
+            งานวิจัย “ระบบการจัดการสิทธิ์การใชงาน Joget”
           </p>
         </div>
       </div>
@@ -40,10 +36,11 @@
           </div>
         </div>
         <div class="timeline-content">
-          <h5 class="title">แข่งขันโครงงานคอมพิวเตอร์ประเภทซอฟต์แวร์</h5>
-          <h5 class="title">งานศิลปหัตถกรรมนักเรียน ครั้งที่ 66</h5>
+          <h5 class="title">
+            โครงงานประเภทซอฟต์แวร์ (ศิลปหัตถกรรม)
+          </h5>
           <p class="description">
-            - รางวัลเหรียญทองระดับจังหวัด (จ.ประจวบฯ)
+            - รางวัลเหรียญทองระดับจังหวัด
           </p>
         </div>
       </div>
@@ -61,11 +58,12 @@
           </div>
         </div>
         <div class="timeline-content">
-          <h5 class="title">แข่งขันการเขียนโปรแกรมด้วยภาษาคอมพิวเตอร์</h5>
-          <h5 class="title">งานศิลปหัตถกรรมนักเรียน ครั้งที่ 65</h5>
+          <h5 class="title">
+            แข่งขันการเขียนโปรแกรม (ศิลปหัตถกรรม)
+          </h5>
           <p class="description">
-            - รางวัลเหรียญทองชนะเลิศระดับจังหวัด (จ.ประจวบฯ) <br />
-            - รางวัลเหรียญทองแดงระดับภูมิภาค (ภาคกลางและภาคตะวันออก)
+            - รางวัลเหรียญทองชนะเลิศระดับจังหวัด <br />
+            - รางวัลเหรียญทองแดงระดับภูมิภาค
           </p>
         </div>
       </div>
@@ -85,7 +83,7 @@
         <div class="timeline-content">
           <h5 class="title">โครงการ KMITL INNOVATIVE AWARD 2014</h5>
           <p class="description">
-            - เข้าร่วมประกวดรอบ 10 ทีมสุดท้าย ณ ศูนย์การค้าเซ็นทรัลเวิลด์
+            - เข้ารอบ 10 ทีมสุดท้ายด้วยผลงาน "รถเข็นสบาย สบาย"
           </p>
         </div>
       </div>
