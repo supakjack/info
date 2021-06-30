@@ -27,9 +27,6 @@
             ><span class="text-dark">บริการ</span></b-nav-item
           >
           <b-nav-item to="/about"
-            ><span class="text-dark">ติดตาม</span></b-nav-item
-          >
-          <b-nav-item to="/about"
             ><span class="text-dark">ติดต่อ/สอบถาม</span></b-nav-item
           >
         </b-navbar-nav>
