@@ -22,6 +22,11 @@
   }
 }
 
+.card {
+  border-left: none;
+  border-right: none;
+}
+
 /* timeline */
 .main-timeline {
   position: relative;
