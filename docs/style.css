@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@300&display=swap');
+
 /* click_to_contact */
 .click_to_contact {
   cursor: pointer;
 }
 /* font */
 * {
-  font-family: 'Kanit', sans-serif;
+  font-family: 'K2D', sans-serif;
+  text-shadow: 0.5px 0.1px 0px #fff, 0.5px 0.5px 0px rgba(0, 0, 0, 0.15);
 }
 /* carousel */
 .banner {
@@ -23,8 +25,21 @@
 }
 
 .card {
+  border-bottom: none;
   border-left: none;
   border-right: none;
+  box-shadow: rgba(22, 31, 39, 0.42) 0px 60px 123px -25px,
+    rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
+  cursor: pointer;
+}
+img {
+  box-shadow: rgba(22, 31, 39, 0.42) 0px 60px 123px -25px,
+    rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
+}
+
+.shadows_box {
+  box-shadow: rgba(22, 31, 39, 0.42) 0px 60px 123px -25px,
+    rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
 }
 
 /* timeline */
