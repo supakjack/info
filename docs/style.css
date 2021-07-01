@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+/* click_to_contact */
+.click_to_contact {
+  cursor: pointer;
+}
 /* font */
 * {
   font-family: 'Kanit', sans-serif;
