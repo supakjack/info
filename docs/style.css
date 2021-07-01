@@ -11,8 +11,14 @@
 .banner {
   /* margin-top: 1.25rem; */
   background-image: url('./images/bg-top.jpg');
-  max-height: 420px;
+  max-height: 720px;
 }
+@media only screen and (max-width: 600px) {
+  .banner {
+    margin-top: -11rem;
+  }
+}
+
 /* timeline */
 .main-timeline {
   position: relative;
