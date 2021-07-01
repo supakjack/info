@@ -9,10 +9,9 @@
 }
 /* carousel */
 .banner {
-  margin-top: 1.25rem;
-  background-color: #232323;
-  height: auto;
-  max-height: 720px;
+  /* margin-top: 1.25rem; */
+  background-image: url('./images/bg-top.jpg');
+  max-height: 420px;
 }
 /* timeline */
 .main-timeline {
