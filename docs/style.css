@@ -1,106 +1,19 @@
-<template>
-  <div class="container">
-    <div class="main-timeline">
-      <!-- start experience section-->
-      <div class="timeline">
-        <div class="icon"></div>
-        <div class="date-content">
-          <div class="date-outer">
-            <span class="date">
-              <span class="month">25 กุมภาพันธ์</span>
-              <span class="year">2564</span>
-            </span>
-          </div>
-        </div>
-        <div class="timeline-content">
-          <h5 class="title">
-            ประชุมวิชาการ AUCC ครั้งที่ 9
-          </h5>
-          <p class="description">
-            - รางวัล "EXCELLENT PAPER AWARDS" <br />
-            งานวิจัย “ระบบการจัดการสิทธิ์การใชงาน Joget”
-          </p>
-        </div>
-      </div>
-      <!-- end experience section-->
-
-      <!-- start experience section-->
-      <div class="timeline">
-        <div class="icon"></div>
-        <div class="date-content">
-          <div class="date-outer">
-            <span class="date">
-              <span class="month">11 พฤศจิกายน</span>
-              <span class="year">2559</span>
-            </span>
-          </div>
-        </div>
-        <div class="timeline-content">
-          <h5 class="title">
-            โครงงานประเภทซอฟต์แวร์ (ศิลปหัตถกรรม)
-          </h5>
-          <p class="description">
-            - รางวัลเหรียญทองระดับจังหวัด
-          </p>
-        </div>
-      </div>
-      <!-- end experience section-->
-
-      <!-- start experience section-->
-      <div class="timeline">
-        <div class="icon"></div>
-        <div class="date-content">
-          <div class="date-outer">
-            <span class="date">
-              <span class="month">20 ธันวาคม</span>
-              <span class="year">2558</span>
-            </span>
-          </div>
-        </div>
-        <div class="timeline-content">
-          <h5 class="title">
-            แข่งขันการเขียนโปรแกรม (ศิลปหัตถกรรม)
-          </h5>
-          <p class="description">
-            - รางวัลเหรียญทองชนะเลิศระดับจังหวัด <br />
-            - รางวัลเหรียญทองแดงระดับภูมิภาค
-          </p>
-        </div>
-      </div>
-      <!-- end experience section-->
-
-      <!-- start experience section-->
-      <div class="timeline">
-        <div class="icon"></div>
-        <div class="date-content">
-          <div class="date-outer">
-            <span class="date">
-              <span class="month">15 กันยายน</span>
-              <span class="year">2556</span>
-            </span>
-          </div>
-        </div>
-        <div class="timeline-content">
-          <h5 class="title">โครงการ KMITL INNOVATIVE AWARD 2014</h5>
-          <p class="description">
-            - เข้ารอบ 10 ทีมสุดท้ายด้วยผลงาน "รถเข็นสบาย สบาย"
-          </p>
-        </div>
-      </div>
-      <!-- end experience section-->
-    </div>
-  </div>
-</template>
-
-<script>
-export default {}
-</script>
-
-<style lang="css" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+/* font */
+* {
+  font-family: 'Kanit', sans-serif;
+}
+/* carousel */
+.banner {
+  margin-top: 1.25rem;
+  background-color: #232323;
+  height: auto;
+  max-height: 720px;
+}
+/* timeline */
 .main-timeline {
   position: relative;
 }
-
 .main-timeline:before {
   content: '';
   display: block;
@@ -113,18 +26,15 @@ export default {}
   left: 0;
   right: 0;
 }
-
 .main-timeline .timeline {
   margin-bottom: 40px;
   position: relative;
 }
-
 .main-timeline .timeline:after {
   content: '';
   display: block;
   clear: both;
 }
-
 .main-timeline .icon {
   width: 18px;
   height: 18px;
@@ -136,7 +46,6 @@ export default {}
   bottom: 0;
   right: 0;
 }
-
 .main-timeline .icon:before,
 .main-timeline .icon:after {
   content: '';
@@ -148,33 +57,27 @@ export default {}
   left: 0;
   transition: all 0.33s ease-out 0s;
 }
-
 .main-timeline .icon:before {
   background: #fff;
   border: 2px solid #232323;
   left: -3px;
 }
-
 .main-timeline .icon:after {
   border: 2px solid #c6c6c6;
   left: 3px;
 }
-
 .main-timeline .timeline:hover .icon:before {
   left: 3px;
 }
-
 .main-timeline .timeline:hover .icon:after {
   left: -3px;
 }
-
 .main-timeline .date-content {
   width: 50%;
   float: left;
   margin-top: 22px;
   position: relative;
 }
-
 .main-timeline .date-content:before {
   content: '';
   width: 36.5%;
@@ -186,7 +89,6 @@ export default {}
   right: 10px;
   bottom: 0;
 }
-
 .main-timeline .date-outer {
   width: 125px;
   height: 125px;
@@ -195,7 +97,6 @@ export default {}
   margin: auto;
   z-index: 1;
 }
-
 .main-timeline .date-outer:before,
 .main-timeline .date-outer:after {
   content: '';
@@ -209,26 +110,21 @@ export default {}
   right: 0;
   transition: all 0.33s ease-out 0s;
 }
-
 .main-timeline .date-outer:before {
   background: #fff;
   border: 2px solid #232323;
   left: -6px;
 }
-
 .main-timeline .date-outer:after {
   border: 2px solid #c6c6c6;
   left: 6px;
 }
-
 .main-timeline .timeline:hover .date-outer:before {
   left: 6px;
 }
-
 .main-timeline .timeline:hover .date-outer:after {
   left: -6px;
 }
-
 .main-timeline .date {
   width: 100%;
   margin: auto;
@@ -236,12 +132,10 @@ export default {}
   top: 27%;
   left: 0;
 }
-
 .main-timeline .month {
   font-size: 18px;
   font-weight: 700;
 }
-
 .main-timeline .year {
   display: block;
   font-size: 30px;
@@ -249,37 +143,30 @@ export default {}
   color: #232323;
   line-height: 36px;
 }
-
 .main-timeline .timeline-content {
   width: 50%;
   padding: 20px 0 20px 50px;
   float: right;
 }
-
 .main-timeline .title {
   font-size: 19px;
   font-weight: 700;
   line-height: 24px;
   margin: 0 0 15px 0;
 }
-
 .main-timeline .description {
   margin-bottom: 0;
 }
-
 .main-timeline .timeline:nth-child(2n) .date-content {
   float: right;
 }
-
 .main-timeline .timeline:nth-child(2n) .date-content:before {
   left: 10px;
 }
-
 .main-timeline .timeline:nth-child(2n) .timeline-content {
   padding: 20px 50px 20px 0;
   text-align: right;
 }
-
 @media only screen and (max-width: 991px) {
   .main-timeline .date-content {
     margin-top: 35px;
@@ -297,7 +184,6 @@ export default {}
     padding: 10px 30px 10px 0;
   }
 }
-
 @media only screen and (max-width: 767px) {
   .main-timeline:before {
     margin: 0;
@@ -345,4 +231,3 @@ export default {}
     margin-bottom: 10px;
   }
 }
-</style>

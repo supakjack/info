@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["about"],{c3e7:function(e,t,a){e.exports=a.p+"img/profile.2aeeb285.png"},f820:function(e,t,a){"use strict";a.r(t);var n=function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("div",{staticClass:"about"},[n("h1",[e._v("This is an about page")]),n("b-img",{attrs:{rounded:"circle",alt:"Circle image",src:a("c3e7")}})],1)},i=[],c=a("2877"),s={},r=Object(c["a"])(s,n,i,!1,null,null,null);t["default"]=r.exports}}]);
-//# sourceMappingURL=about.fbb9880e.js.map
