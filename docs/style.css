@@ -11,14 +11,9 @@
 }
 /* carousel */
 .banner {
-  /* margin-top: 1.25rem; */
-  background-image: url('./images/bg-top.jpg');
-  max-height: 720px;
+  background-color: black;
 }
 @media only screen and (max-width: 768px) {
-  .banner {
-    margin-top: -11rem;
-  }
   .res-text {
     font-size: 0.5rem;
   }
