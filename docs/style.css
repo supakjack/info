@@ -9,6 +9,29 @@
   font-family: 'K2D', sans-serif;
   text-shadow: 0.5px 0.1px 0px #fff, 0.5px 0.5px 0px rgba(0, 0, 0, 0.15);
 }
+.cursor {
+  display: inline-block;
+  margin-left: 0.5rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
 /* carousel */
 .banner {
   background-color: black;
