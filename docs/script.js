@@ -9,7 +9,12 @@ $('.click_to_contact').click(function (e) {
 const typedTextSpan = document.querySelector('.typed-text')
 const cursorSpan = document.querySelector('.cursor')
 
-const textArray = ['อยากทำเว็บไซต์', 'ปรึกษาโปรเจค', 'ไม่เข้าใจบทเรียน']
+const textArray = [
+  'อยากทำเว็บไซต์',
+  'ปรึกษาโปรเจค',
+  'พัฒนาระบบ',
+  'อยากเรียนเขียนโปรแกรม'
+]
 const typingDelay = 200
 const erasingDelay = 100
 const newTextDelay = 750 // Delay between current and next text
