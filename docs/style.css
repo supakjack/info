@@ -49,17 +49,17 @@
   border-bottom: none;
   border-left: none;
   border-right: none;
-  box-shadow: rgba(22, 31, 39, 0.42) 0px 60px 123px -25px,
+  box-shadow: rgba(178, 181, 184, 0.42) 0px 3px 13px -5px,
     rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
   cursor: pointer;
 }
 img {
-  box-shadow: rgba(22, 31, 39, 0.42) 0px 60px 123px -25px,
+  box-shadow: rgba(178, 181, 184, 0.42) 0px 3px 13px -5px,
     rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
 }
 
 .shadows_box {
-  box-shadow: rgba(22, 31, 39, 0.42) 0px 60px 123px -25px,
+  box-shadow: rgba(178, 181, 184, 0.42) 0px 3px 13px -5px,
     rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
 }
 
@@ -164,8 +164,8 @@ img {
   transition: all 0.33s ease-out 0s;
 }
 .main-timeline .date-outer:before {
-  background: #fff;
-  border: 2px solid #232323;
+  background: rgba(252, 252, 252, 0.219);
+  border: 2px solid #e4e4e4;
   left: -6px;
 }
 .main-timeline .date-outer:after {
