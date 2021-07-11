@@ -1,452 +1,242 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
-
-    <!-- Bootstrap Icon -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-    />
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- jQuery Core 3.6.0 min -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-    <title>รับสอนและปรึกษา เขียนโปรแกรม เว็บไซต์และโปรเจคโดย สุภัค พุกดำ</title>
+	<title>รับสอนและปรึกษา เขียนโปรแกรม เว็บไซต์และโปรเจคโดย สุภัค พุกดำ</title>
     <link rel="icon" href="./images/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="./style.css" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
   </head>
+  <body class="landing is-preload">
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+      <!-- Header -->
+      <header id="header" class="alt">
+        <h1> <a href="index.html">SUPAKJACK</a></h1>
+        <nav id="nav">
+          <ul>
+            <li class="special">
+              <a href="#menu" class="menuToggle"><span>เมนู</span></a>
+              <div id="menu">
+                <ul>
+                  <li><a href="#banner" class="more scrolly">หน้าแรก</a></li>
+                  <li><a href="#one" class="more scrolly">บริการ</a></li>
+                  <li><a href="#three" class="more scrolly">เกี่ยวกับ</a></li>
+                  <li><a href="#cta" class="more scrolly">ติดต่อ/สอบถาม</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-  <body class="container-fluid">
-    <header id="home" data-aos="fade-up" class="row mb-5">
-      <nav
-        class="
-          fixed-top
-          navbar navbar-expand-lg navbar-light
-          bg-light
-          shadows_box
-        "
-      >
-        <div class="container-fluid">
-          <a
-            class="
-              navbar-brand
-              justify-content-center
-              d-flex
-              align-items-center
-              flex-wrap
-            "
-            href="#home"
-          >
-            <img
-              src="./images/logo.png"
-              alt=""
-              width="40"
-              height="40"
-              class="d-inline-block align-text-top mb-1 rounded-circle"
-            />
-            <div class="h6 text-left">
-              &nbsp&nbsp<span style="font-size: 1.2rem">SUPAKJACK</span>
-              <br />
-              &nbsp&nbsp<span style="font-size: 0.6rem"
-                >สอนปรึกษาเขียนโปรแกรมเว็บไซต์โปรเจค</span
-              >
-            </div>
-          </a>
-          <button
-            class="navbar-toggler collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarColor03"
-            aria-controls="navbarColor03"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span
-              style="font-size: 0.65rem"
-              class="navbar-toggler-icon pt-4"
-            ></span>
-          </button>
-          <div class="navbar-collapse collapse" id="navbarColor03">
-            <ul class="navbar-nav ms-md-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#home"
-                  >หน้าหลัก</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#service">บริการ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#about"
-                  >เกี่ยวกับ</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">ติดต่อ/สอบถาม</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- start carousel -->
-    <div style="margin-top: 5rem" class="row" data-aos="fade-down">
-      <div class="col-12 p-0">
-        <div class="banner text-dark p-4 shadows_box text-center bg-light">
-          <!-- <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          -->
-          <!-- <br />
-          <br /> -->
-          <p class="h6 fw-lighter res-text-2 mb-3">หากคุณกำลังมีปัญหา และต้องการความช่วยเหลือ . . .</p>
-          <div class="h1 mt-5 mb-5">
+      <!-- Banner -->
+      <section id="banner">
+        <div class="inner">
+          <p>หากคุณกำลังมีปัญหา และต้องการความช่วยเหลือ . . .</p>
+          <h2>
             <span class="typed-text"></span><span class="cursor">&nbsp;</span>
-          </div>
-          <p class="h6 fw-lighter res-text-2">
-             เราพร้อมสอน ปรึกษา และพัฒนาด้วยเครื่องมือและภาษาต่าง ๆ เช่น
-          </p>
-          <p class="h6 fw-lighter res-text-2">
-            Node.js , PHP, JavaScript , CSS , SQL, HTML , C , C++
-          </p>
+          </h2>
+          <p>มาเรียนรู้และขอคำปรึกษาการพัฒนาเว็บไซต์และโปรเจคกับผมซิ !</p>
+          <ul class="actions special">
+            <li><a href="#" class="button primary">ติดต่อ/สอบถาม</a></li>
+          </ul>
         </div>
-      </div>
-    </div>
-    <!-- end carousel -->
+        <a href="#one" class="more scrolly">เรียนรู้เพิ่มเติม</a>
+      </section>
 
-    <!-- start service -->
-    <div data-aos="fade-up" id="service" class="row text-center mt-5">
-      <div class="col-12">
-        <p class="mb-5 h1">บริการ</p>
-        <!-- <div class="row">
-          <div class="col"></div>
-          <hr
-            style="
-              margin-top: -2rem;
-              background-color: rgb(0, 0, 0);
-              height: 1px;
-              border: 0;
-              max-width: 250px;
-            "
-            class="shadows_box"
-          />
-          <div class="col"></div>
-        </div> -->
-      </div>
-    </div>
-    <div>
-      <div class="row d-flex justify-content-center">
-        <div
-          style="max-width: 450px"
-          class="col-md-6 col-lg-12 mb-4 text-center"
-        >
-          <div data-aos="fade-up" class="card box-shadow rounded-3">
-            <div class="card-header rounded-3">
-              <h4 class="my-0 font-weight-normal">สอนและให้คำปรึกษา</h4>
-            </div>
-            <div class="card-body">
-              <h1 class="card-title pricing-card-title">
-                250 บาท <small class="text-muted">/ ชั่วโมง</small>
-              </h1>
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>การเขียนโปรแกรมและการพัฒนาระบบ</li>
-                <li>วิเคราะห์และออกแบบระบบ</li>
-                <li>วิชาที่เกี่ยวข้องกับวิศวกรรมซอฟต์แวร์</li>
-              </ul>
-              <button
-                type="button"
-                class="
-                  btn
-                  rounded-3
-                  btn-lg btn-block btn-primary
-                  click_to_contact
-                "
+      <!-- One -->
+      <section id="one" class="wrapper style1 special">
+        <div class="inner">
+          <header class="major">
+            <h2>
+              บริการสอน ปรึกษา พัฒนาโปรแกรม เว็บไชต์และโปรเจค <br />
+              Web APPLICATION, Web API และ IoT เป็นต้น
+            </h2>
+            <p>
+              เน้นใช้เครื่องมือ Open Source เช่น Vue.js, Codeigniter, Node.JS,
+              Bootstrap และ ฯลฯ
+              <br />
+            </p>
+          </header>
+          <ul class="icons major">
+            <li>
+              <span class="icon fa-file-code major style1"
+                ><span class="label">Lorem</span></span
               >
-                ติดต่อขอรายละเอียด
-              </button>
-            </div>
-          </div>
-        </div>
-        <div
-          style="max-width: 450px"
-          class="col-md-6 col-lg-12 mb-4 text-center"
-        >
-          <div data-aos="fade-up" class="card box-shadow rounded-3">
-            <div class="card-header rounded-3">
-              <h4 class="my-0 font-weight-normal">พัฒนาระบบและเว็บไซต์</h4>
-            </div>
-            <div class="card-body">
-              <h1 class="card-title pricing-card-title">
-                <small class="text-muted">เริ่มต้น</small> 2,000 บาท
-              </h1>
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>รองรับ Php , Codeigniter , Node.js , Vue.js</li>
-                <li>พัฒนาเว็บไซต์หน้าเดียวบน GitHub Page</li>
-                <li>พัฒนา Web API และ Web Service</li>
-              </ul>
-              <button
-                type="button"
-                class="
-                  btn
-                  rounded-3
-                  btn-lg btn-block btn-primary
-                  click_to_contact
-                "
+            </li>
+            <li>
+              <span class="icon solid fa-laptop-code major style2"
+                ><span class="label">Ipsum</span></span
               >
-                ติดต่อขอรายละเอียด
-              </button>
-            </div>
-          </div>
-        </div>
-        <div
-          style="max-width: 450px"
-          class="col-md-6 col-lg-12 mb-4 text-center"
-        >
-          <div data-aos="fade-up" class="card box-shadow rounded-3">
-            <div class="card-header rounded-3">
-              <h4 class="my-0 font-weight-normal">เขียนโปรแกรม</h4>
-            </div>
-            <div class="card-body">
-              <h1 class="card-title pricing-card-title">
-                <small class="text-muted">เริ่มต้น</small> 500 บาท
-              </h1>
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>เขียนโปรแกรมภาษา Php , C , C++ และ JavaScript</li>
-                <li>สร้าง Console Application</li>
-                <li>เขียนฟังก์ชั่นการทำงานต่าง ๆ</li>
-              </ul>
-              <button
-                type="button"
-                class="
-                  btn
-                  rounded-3
-                  btn-lg btn-block btn-primary
-                  click_to_contact
-                "
+            </li>
+            <li>
+              <span class="icon solid fa-code major style3"
+                ><span class="label">Dolor</span></span
               >
-                ติดต่อขอรายละเอียด
-              </button>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
-      </div>
-    </div>
-    <!-- end service -->
+      </section>
 
-    <!-- start profile -->
-    <div data-aos="fade-down" id="about" class="row text-center">
-      <div class="col-12">
-        <p class="mt-5 mb-5 h1">เกี่ยวกับ</p>
-        <!--  <div class="row">
-          <div class="col"></div>
-          <hr
-            style="
-              margin-top: -2rem;
-              background-color: rgb(0, 0, 0);
-              height: 1px;
-              border: 0;
-              max-width: 250px;
-            "
-            class="shadows_box"
-          />
-          <div class="col"></div>
-        </div> -->
-      </div>
-      <div class="col-12">
-        <img src="./images/top-profile.png" alt="Image" class="p-2 rounded-3" />
-      </div>
-      <p class="card-text mt-3">
-        <span class="h2">นายสุภัค พุกดำ</span><br /><span class="fw-bolder fs-5"
-          >เกียรตินิยมอันดับ 1
-        </span>
-        <span class="fs-5">วิศวกรรมซอฟต์แวร์</span> <br />
-
-        <span class="fs-5">มหาวิทยาลัยบูรพา</span>
-      </p>
-      <br />
-      <br />
-    </div>
-    <!-- end profile -->
-
-    <!-- start timeline -->
-    <div data-aos="fade-up" class="shadows_box p-5 rounded-3">
-      <div class="main-timeline">
-        <!-- start experience section-->
-        <div data-aos="fade-up" class="timeline">
-          <div class="icon"></div>
-          <div class="date-content">
-            <div class="date-outer">
-              <span class="date">
-                <span class="month">25 กุมภาพันธ์</span>
-                <span class="year">2564</span>
-              </span>
-            </div>
-          </div>
-          <div class="timeline-content">
-            <h5 class="title">ประชุมวิชาการ AUCC ครั้งที่ 9</h5>
-            <p class="description">
-              - รางวัล "EXCELLENT PAPER AWARDS" <br />
-              งานวิจัย “ระบบการจัดการสิทธิ์การใชงาน Joget”
+      <!-- Two -->
+      <section id="two" class="wrapper alt style2">
+        <section class="spotlight">
+          <div class="image"><img src="images/pic01.jpg" alt="" /></div>
+          <div class="content">
+            <h2>สอนและให้คำปรึกษา</h2>
+            <p>
+			  บริการสอนและให้คำปรึกษาบุคคลทั่วไปที่สนใจศึกษา และนักเรียน นิสิต
+              นักศึกษาที่มีปัญหากับการเรียนหรือโปรเจค
             </p>
           </div>
-        </div>
-        <!-- end experience section-->
-
-        <!-- start experience section-->
-        <div data-aos="fade-up" class="timeline">
-          <div class="icon"></div>
-          <div class="date-content">
-            <div class="date-outer">
-              <span class="date">
-                <span class="month">11 พฤศจิกายน</span>
-                <span class="year">2559</span>
-              </span>
-            </div>
-          </div>
-          <div class="timeline-content">
-            <h5 class="title">โครงงานประเภทซอฟต์แวร์ (ศิลปหัตถกรรม)</h5>
-            <p class="description">- รางวัลเหรียญทองระดับจังหวัด</p>
-          </div>
-        </div>
-        <!-- end experience section-->
-
-        <!-- start experience section-->
-        <div data-aos="fade-up" class="timeline">
-          <div class="icon"></div>
-          <div class="date-content">
-            <div class="date-outer">
-              <span class="date">
-                <span class="month">20 ธันวาคม</span>
-                <span class="year">2558</span>
-              </span>
-            </div>
-          </div>
-          <div class="timeline-content">
-            <h5 class="title">แข่งขันการเขียนโปรแกรม (ศิลปหัตถกรรม)</h5>
-            <p class="description">
-              - รางวัลเหรียญทองชนะเลิศระดับจังหวัด <br />
-              - รางวัลเหรียญทองแดงระดับภูมิภาค
+        </section>
+        <section class="spotlight">
+          <div class="image"><img src="images/pic02.jpg" alt="" /></div>
+          <div class="content">
+            <h2>พัฒนาระบบและเว็บไซต์<br /></h2>
+            <p>
+              พร้อมพัฒนาและหา Solution ในการ Deploy
+              ให้คุณไม่ว่าจะเป็นเว็บไซต์ที่ใช้บริการ Github Page หรือบริการ Host
+              และ VPS ที่เหมาะสมกับงาน
             </p>
           </div>
-        </div>
-        <!-- end experience section-->
-
-        <!-- start experience section-->
-        <div data-aos="fade-up" class="timeline">
-          <div class="icon"></div>
-          <div class="date-content">
-            <div class="date-outer">
-              <span class="date">
-                <span class="month">15 กันยายน</span>
-                <span class="year">2556</span>
-              </span>
-            </div>
-          </div>
-          <div class="timeline-content">
-            <h5 class="title">โครงการ KMITL INNOVATIVE AWARD 2014</h5>
-            <p class="description">
-              - เข้ารอบ 10 ทีมสุดท้ายด้วยผลงาน "รถเข็นสบาย สบาย"
+        </section>
+        <section class="spotlight">
+          <div class="image"><img src="images/pic03.jpg" alt="" /></div>
+          <div class="content">
+            <h2>เขียนโปรแกรมและแก้บัค</h2>
+            <p>
+              บริการเขียนโปรแกรมในรูปแบบ Console Application
+              และแก้บัคตามฟังก์ชั่นการทำงาน
             </p>
           </div>
-        </div>
-        <!-- end experience section-->
-      </div>
-    </div>
-    <!-- end timeline -->
+        </section>
+      </section>
 
-    <!-- start contact -->
-    <div data-aos="fade-up" id="contact" class="row text-center">
-      <div class="col-12">
-        <p class="mt-5 mb-5 h1">ติดต่อ/สอบถาม</p>
-        <!-- <div class="row">
-          <div class="col"></div>
-          <hr
-            style="
-              margin-top: -2rem;
-              background-color: rgb(0, 0, 0);
-              height: 1px;
-              border: 0;
-              max-width: 250px;
-            "
-            class="shadows_box"
-          />
-          <div class="col"></div>
-        </div> -->
-      </div>
-      <div class="col-12">
-        <img
-          src="./images/learn-logo.png"
-          alt="Image"
-          style="max-width: 250px"
-          class="rounde p-2 rounded-pill click_to_contact"
-        />
-      </div>
-      <div class="card-text mt-3 d-flex flex-row justify-content-center">
-        <div class="d-flex align-items-baseline">
-          <img
-            src="./images/icon-social-fb.png"
-            style="max-width: 50px"
-            class="rounded mx-auto d-block click_to_contact"
-            alt="..."
-          />
-        </div>
-        <div class="d-flex align-items-center mt-2">
-          <p class="h6 click_to_contact res-text-2">
-            &nbsp&nbspรับปรึกษาและสอนเขียนโปรแกรมและโปรเจค - โดย SJ.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- end contact -->
-
-    <footer>
-      <div class="row mt-3">
-        <div class="card bg-light shadows_box">
-          <div class="card-body row d-flex justify-content-between res-text">
-            <div class="col-6">
-              <span>SUPAKJACK</span>
-              <br />สอนปรึกษาเขียนโปรแกรมเว็บไซต์โปรเจค
+      <!-- Three -->
+      <section id="three" class="wrapper style3 special">
+        <div class="inner">
+          <header class="major">
+            <h2>เกี่ยวกับ</h2>
+            <div class="d-flex justify-content-center" >
+                <img
+                  src="images/top-profile.png"
+                  alt=""
+                  style="border: 2px solid; padding: 0.25rem; max-width: 250px; border-radius: 5%;"
+                />
+              </div>
             </div>
-            <div class="text-end col-6">
-              <span>
-                ออกแบบและพัฒนาโดย นายสุภัค พุกดำ <br />Copyright © 2021
-                supakjack
-              </span>
-            </div>
-          </div>
+            <p>
+              นายสุภัค พุกดำ เกียรตินิยมอันดับ 1
+              <br />วิศวกรรมซอฟต์แวร์ มหาวิทยาลัยบูรพา
+            </p>
+          </header>
+          <ul class="features">
+            <li class="icon solid fa-award">
+              <h3>งานประชุมวิชาการระดับปริญญาตรีด้านคอมพิวเตอร์ภูมิภาคอาเซียน AUCC ครั้งที่ 9</h3>
+              <p>
+				25 กุมภาพันธ์
+				2564 - รางวัล "EXCELLENT PAPER AWARDS"
+งานวิจัย “ระบบการจัดการสิทธิ์การใช้งาน Joget”
+              </p>
+            </li>
+            <li class="icon solid fa-laptop">
+              <h3>โครงงานประเภทซอฟต์แวร์ (ศิลปหัตถกรรม)</h3>
+              <p>
+				11 พฤศจิกายน
+				2559 - รางวัลเหรียญทองระดับจังหวัดจากผลงาน "นวัตกรรมเครื่องมือสื่อการเรียนรู้ในรูปแบบวีดีโอ 360 องศา (Tech Lab By HV Roboclub)"
+              </p>
+            </li>
+            <li class="icon solid fa-code">
+              <h3>แข่งขันการเขียนโปรแกรม (ศิลปหัตถกรรม)</h3>
+              <p>
+                20 ธันวาคม
+2558 - รางวัลเหรียญทองชนะเลิศระดับจังหวัดและรางวัลเหรียญทองแดงระดับภูมิภาค
+              </p>
+            </li>
+            <li class="icon solid fa-tools">
+              <h3>โครงการ KMITL INNOVATIVE AWARD 2014</h3>
+              <p>
+                15 กันยายน
+2556 - เข้ารอบ 10 ทีมสุดท้ายระดับประเทศ ชิงถ้วยพระราชทานด้วยผลงาน "รถเข็นสบาย สบาย" 
+              </p>
+            </li>
+          </ul>
         </div>
-      </div>
-    </footer>
+      </section>
 
-    <script>
-      AOS.init()
-      // You can also pass an optional settings object
-      // below listed default settings
-    </script>
-    <script src="./script.js"></script>
+      <!-- CTA -->
+      <section id="cta" class="wrapper style4">
+        <div class="inner">
+          <header>
+            <h2>ติดต่อ/สอบถาม</h2>
+            <p>
+				<i class="fab fa-facebook"></i> รับปรึกษาและสอนเขียนโปรแกรมและโปรเจค - โดย SJ.
+            </p>
+			<p></p>
+          </header>
+          <ul class="actions stacked" style="margin-top: auto;">
+            <li><a href="https://www.facebook.com/sjdevth/" target="_blank" class="button fit primary">ไปที่แฟนเพจ <i class="fab fa-facebook"></i> </a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="icons">
+          <li>
+            <a href="https://www.facebook.com/sjdevth/" target="_blank" class="icon brands fa-twitter"
+              ><span class="label">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a href="https://www.facebook.com/sjdevth/" target="_blank" class="icon brands fa-facebook-f"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a href="https://www.facebook.com/sjdevth/" target="_blank" class="icon brands fa-instagram"
+              ><span class="label">Instagram</span></a
+            >
+          </li>
+          <li>
+            <a href="https://www.facebook.com/sjdevth/" target="_blank" class="icon brands fa-dribbble"
+              ><span class="label">Dribbble</span></a
+            >
+          </li>
+          <li>
+            <a href="https://www.facebook.com/sjdevth/" target="_blank" class="icon solid fa-envelope"
+              ><span class="label">Email</span></a
+            >
+          </li>
+        </ul>
+        <ul class="copyright">
+          <li>&copy; 2021 SUPAKJACK
+			สอนปรึกษาเขียนโปรแกรมเว็บไซต์โปรเจค </li>
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
