@@ -1,10 +1,10 @@
 /*
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  Spectral by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-;(function ($) {
+; (function ($) {
   var $window = $(window),
     $body = $('body'),
     $wrapper = $('#page-wrapper'),
@@ -81,16 +81,166 @@
   }
 })(jQuery)
 
+// i18n setting
+function findGetParameter(parameterName) {
+  var result = null,
+    tmp = []
+  location.search
+    .substr(1)
+    .split('&')
+    .forEach(function (item) {
+      tmp = item.split('=')
+      if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1])
+    })
+  return result
+}
+
+function updateQueryStringParameter(uri, key, value) {
+  var re = new RegExp('([?&])' + key + '=.*?(&|$)', 'i')
+  var separator = uri.indexOf('?') !== -1 ? '&' : '?'
+  if (uri.match(re)) {
+    return uri.replace(re, '$1' + key + '=' + value + '$2')
+  } else {
+    return uri + separator + key + '=' + value
+  }
+}
+
+function setQueryStringParameter(name, value) {
+  const params = new URLSearchParams(window.location.search)
+  params.set(name, value)
+  window.history.replaceState(
+    {},
+    '',
+    decodeURIComponent(`${window.location.pathname}?${params}`)
+  )
+}
+
+function renderLang() {
+  document.getElementById('banner01').innerHTML = i18next.t('banner01')
+  document.getElementById('banner02').innerHTML = i18next.t('banner02')
+  document.getElementById('banner03').innerHTML = i18next.t('banner03')
+  document.getElementById('banner04').innerHTML = i18next.t('banner04')
+  document.getElementById('one01').innerHTML = i18next.t('one01')
+  document.getElementById('one02').innerHTML = i18next.t('one02')
+  document.getElementById('two01').innerHTML = i18next.t('two01')
+  document.getElementById('two02').innerHTML = i18next.t('two02')
+  document.getElementById('two03').innerHTML = i18next.t('two03')
+  document.getElementById('two04').innerHTML = i18next.t('two04')
+  document.getElementById('two05').innerHTML = i18next.t('two05')
+  document.getElementById('two06').innerHTML = i18next.t('two06')
+  document.getElementById('menu01').innerHTML = i18next.t('menu01')
+}
+
+i18next
+  .init({
+    lng: ['th', 'en'], // if you're using a language detector, do not define the lng option
+    debug: true,
+    resources: {
+      en: {
+        translation: {
+          menu01: 'MENU',
+          banner01: 'If you are having problems and need help...',
+          banner02: 'I am happy to advise and teach you.',
+          banner03: 'Contact/Ask',
+          banner04: 'Learn more',
+          one01: `Teaching, consulting, program development, web sites and projects <br />
+          Web APPLICATION, Web API and IoT etc.`,
+          one02: `Focus on Open Source tools such as Vue.js, Codeigniter, Node.JS,
+          Bootstrap and etc.`,
+          two01: 'teaching and consulting',
+          two02: `Teaching and consulting services for people interested in studying and students
+          Students who have problems with their studies or projects`,
+          two03: `System and website development<br />`,
+          two04: `Ready to develop and find solutions to deploy
+          For you whether it's a website using Github Page service or hosting service.
+          and the right VPS for the job`,
+          two05: 'Write programs and fix bugs',
+          two06: `Programming service in console application format
+          and fix bugs according to functionality`
+        }
+      },
+      th: {
+        translation: {
+          menu01: 'เมนู',
+          banner01: 'หากคุณกำลังมีปัญหา และต้องการความช่วยเหลือ...',
+          banner02: 'ผมยินดีให้คำปรึกษาและสอนคุณ',
+          banner03: 'ติดต่อ/สอบถาม',
+          banner04: 'เรียนรู้เพิ่มเติม',
+          one01: `บริการสอน ปรึกษา พัฒนาโปรแกรม เว็บไชต์และโปรเจค <br />
+          Web APPLICATION, Web API และ IoT เป็นต้น`,
+          one02: `เน้นใช้เครื่องมือ Open Source เช่น Vue.js, Codeigniter, Node.JS,
+          Bootstrap และ ฯลฯ`,
+          two01: 'สอนและให้คำปรึกษา',
+          two02: `บริการสอนและให้คำปรึกษาบุคคลทั่วไปที่สนใจศึกษา และนักเรียน นิสิต
+          นักศึกษาที่มีปัญหากับการเรียนหรือโปรเจค`,
+          two03: `พัฒนาระบบและเว็บไซต์<br />`,
+          two04: `พร้อมพัฒนาและหา Solution ในการ Deploy
+          ให้คุณไม่ว่าจะเป็นเว็บไซต์ที่ใช้บริการ Github Page หรือบริการ Host
+          และ VPS ที่เหมาะสมกับงาน`,
+          two05: 'เขียนโปรแกรมและแก้บัค',
+          two06: `บริการเขียนโปรแกรมในรูปแบบ Console Application
+          และแก้บัคตามฟังก์ชั่นการทำงาน`
+        }
+      }
+    }
+  })
+  .then(function (t) {
+    if (findGetParameter('lang')) {
+      switch (findGetParameter('lang')) {
+        case 'th':
+          i18next.changeLanguage('th')
+          i18next.languages
+          $('.th-lang').css('text-decoration', 'underline')
+          break
+        case 'en':
+          i18next.changeLanguage('en')
+          i18next.languages
+          $('.en-lang').css('text-decoration', 'underline')
+          break
+      }
+    } else {
+      setQueryStringParameter('lang', 'th')
+      $('.th-lang').css('text-decoration', 'underline')
+    }
+    renderLang()
+  })
+
+$('.lang-bar').click(function (e) {
+  e.preventDefault()
+  const lang = $(e.currentTarget).text()
+  if (lang == 'ไทย') {
+    i18next.changeLanguage('th')
+    i18next.languages
+    window.location.href = updateQueryStringParameter(
+      window.location.href,
+      'lang',
+      'th'
+    )
+  } else {
+    i18next.changeLanguage('en')
+    i18next.languages
+    window.location.href = updateQueryStringParameter(
+      window.location.href,
+      'lang',
+      'en'
+    )
+  }
+  renderLang()
+})
+
 // tyeping
 const typedTextSpan = document.querySelector('.typed-text')
 const cursorSpan = document.querySelector('.cursor')
 
-const textArray = [
-  'อยากทำเว็บไซต์',
-  'ปรึกษาโปรเจค',
-  'พัฒนาระบบ',
-  'เรียนเขียนโปรแกรม'
-]
+const textArray =
+  findGetParameter('lang') == 'en'
+    ?
+    [
+      'Make a website',
+      'Project Consulting',
+      'System development',
+      'Programming'
+    ] : ['อยากทำเว็บไซต์', 'ปรึกษาโปรเจค', 'พัฒนาระบบ', 'เรียนเขียนโปรแกรม']
 const typingDelay = 200
 const erasingDelay = 100
 const newTextDelay = 750 // Delay between current and next text

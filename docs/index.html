@@ -15,58 +15,61 @@
     />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
+    ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
+    
   </head>
   <body class="landing is-preload">
     <!-- Page Wrapper -->
     <div id="page-wrapper">
       <!-- Header -->
       <header id="header" class="alt">
-        <h1> <a href="index.html">SUPAKJACK</a></h1>
-        <nav id="nav">
-          <ul>
-            <li class="special">
-              <a href="#menu" class="menuToggle"><span>เมนู</span></a>
-              <div id="menu">
-                <ul>
-                  <li><a href="#banner" class="more scrolly">หน้าแรก</a></li>
-                  <li><a href="#one" class="more scrolly">บริการ</a></li>
-                  <li><a href="#three" class="more scrolly">เกี่ยวกับ</a></li>
-                  <li><a href="#cta" class="more scrolly">ติดต่อ/สอบถาม</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </nav>
+        <h1> <a href="index.html">SUPAKJACK</a></h1>          
+          <nav id="nav">
+            <ul>
+              <li class="special">
+                <a href="#menu" class="menuToggle"><span id="menu01"></span></a>
+                <div id="menu">
+                  <ul>
+                    <li><a href="#banner" class="more scrolly">หน้าแรก</a></li>
+                    <li><a href="#one" class="more scrolly">บริการ</a></li>
+                    <li><a href="#three" class="more scrolly">เกี่ยวกับ</a></li>
+                    <li><a href="#cta" class="more scrolly">ติดต่อ/สอบถาม</a></li>
+                    <li>
+                      <a style="float: left; margin-right: 0.5rem;"> เลือกภาษา : <a class="lang-bar th-lang" style="float: left; margin-right: 0.5rem; cursor: pointer;">ไทย</a> <a style="float: left;  margin-right: 0.5rem;">|</a> <a class="lang-bar en-lang" style="float: left; cursor: pointer;">ENGLISH</a></a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
       </header>
-
+      
+      
       <!-- Banner -->
       <section id="banner">
         <div class="inner">
-          <p>หากคุณกำลังมีปัญหา และต้องการความช่วยเหลือ...</p>
+          <p id="banner01"></p>
           <h2>
             <span class="typed-text"></span><span class="cursor">&nbsp;</span>
           </h2>
-          <p>ผมยินดีให้คำปรึกษาและสอนคุณ</p>
+          <p id="banner02"></p>
           <ul class="actions special">
-            <li><a href="https://www.facebook.com/sjdevth/" target="_blank" class="button primary">ติดต่อ/สอบถาม</a></li>
+            <li><a id="banner03" href="https://www.facebook.com/sjdevth/" target="_blank" class="button primary"></a></li>
           </ul>
         </div>
-        <a href="#one" class="more scrolly">เรียนรู้เพิ่มเติม</a>
+        <a id="banner04" href="#one" class="more scrolly"></a>
       </section>
 
       <!-- One -->
       <section id="one" class="wrapper style1 special">
         <div class="inner">
           <header class="major">
-            <h2>
-              บริการสอน ปรึกษา พัฒนาโปรแกรม เว็บไชต์และโปรเจค <br />
-              Web APPLICATION, Web API และ IoT เป็นต้น
+            <h2 id="one01">
+              
             </h2>
-            <p>
-              เน้นใช้เครื่องมือ Open Source เช่น Vue.js, Codeigniter, Node.JS,
-              Bootstrap และ ฯลฯ
+            <p id="one02">
+              
               <br />
             </p>
           </header>
@@ -95,31 +98,26 @@
         <section class="spotlight">
           <div class="image"><img src="images/pic01.jpg" alt="" /></div>
           <div class="content">
-            <h2>สอนและให้คำปรึกษา</h2>
-            <p>
-			  บริการสอนและให้คำปรึกษาบุคคลทั่วไปที่สนใจศึกษา และนักเรียน นิสิต
-              นักศึกษาที่มีปัญหากับการเรียนหรือโปรเจค
+            <h2 id="two01"></h2>
+            <p id="two02">
             </p>
           </div>
         </section>
         <section class="spotlight">
           <div class="image"><img src="images/pic02.jpg" alt="" /></div>
           <div class="content">
-            <h2>พัฒนาระบบและเว็บไซต์<br /></h2>
-            <p>
-              พร้อมพัฒนาและหา Solution ในการ Deploy
-              ให้คุณไม่ว่าจะเป็นเว็บไซต์ที่ใช้บริการ Github Page หรือบริการ Host
-              และ VPS ที่เหมาะสมกับงาน
+            <h2 id="two03"></h2>
+            <p id="two04">
+              
             </p>
           </div>
         </section>
         <section class="spotlight">
           <div class="image"><img src="images/pic03.jpg" alt="" /></div>
           <div class="content">
-            <h2>เขียนโปรแกรมและแก้บัค</h2>
-            <p>
-              บริการเขียนโปรแกรมในรูปแบบ Console Application
-              และแก้บัคตามฟังก์ชั่นการทำงาน
+            <h2 id="two05"></h2>
+            <p id="two06">
+              
             </p>
           </div>
         </section>
@@ -164,6 +162,20 @@
               <p>
                 20 ธันวาคม
 2558 - รางวัลเหรียญทองชนะเลิศระดับจังหวัดและรางวัลเหรียญทองแดงระดับภูมิภาค
+              </p>
+            </li>
+            <li class="icon solid fa-tools">
+              <h3>โครงการ KMITL INNOVATIVE AWARD 2014</h3>
+              <p>
+                15 กันยายน
+2556 - เข้ารอบ 10 ทีมสุดท้ายระดับประเทศ ชิงถ้วยพระราชทานด้วยผลงาน "รถเข็นสบาย สบาย" 
+              </p>
+            </li>
+            <li class="icon solid fa-tools">
+              <h3>โครงการ KMITL INNOVATIVE AWARD 2014</h3>
+              <p>
+                15 กันยายน
+2556 - เข้ารอบ 10 ทีมสุดท้ายระดับประเทศ ชิงถ้วยพระราชทานด้วยผลงาน "รถเข็นสบาย สบาย" 
               </p>
             </li>
             <li class="icon solid fa-tools">
@@ -237,6 +249,7 @@
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
+    <script src="https://unpkg.com/i18next@20.3.3/dist/umd/i18next.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
