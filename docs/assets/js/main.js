@@ -4,7 +4,7 @@
   Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-; (function ($) {
+;(function ($) {
   var $window = $(window),
     $body = $('body'),
     $wrapper = $('#page-wrapper'),
@@ -128,6 +128,14 @@ function renderLang() {
   document.getElementById('two04').innerHTML = i18next.t('two04')
   document.getElementById('two05').innerHTML = i18next.t('two05')
   document.getElementById('two06').innerHTML = i18next.t('two06')
+  document.getElementById('three01').innerHTML = i18next.t('three01')
+  document.getElementById('four01').innerHTML = i18next.t('four01')
+  document.getElementById('four02').innerHTML = i18next.t('four02')
+  document.getElementById('four03').innerHTML = i18next.t('four03')
+  document.getElementById('four04').innerHTML = i18next.t('four04')
+  document.getElementById('five01').innerHTML = i18next.t('five01')
+  document.getElementById('five02').innerHTML = i18next.t('five02')
+  document.getElementById('textabout').innerHTML = i18next.t('textabout')
   document.getElementById('menu01').innerHTML = i18next.t('menu01')
 }
 
@@ -156,7 +164,42 @@ i18next
           and the right VPS for the job`,
           two05: 'Write programs and fix bugs',
           two06: `Programming service in console application format
-          and fix bugs according to functionality`
+          and fix bugs according to functionality`,
+          three01: `Mr. Supak Pukdam, Summa cumme Laude -
+          <br />Software Engineering Burapha University.
+          <br />Currently <span style="font-size: 1.5rem; text-decoration: underline;">Computer Technical Officer</span>`,
+          four01: `
+          <h3>The 9th AUCC ASEAN Undergraduate Computing Conference</h3>
+           <p>
+             February 25
+             2021 - Award "EXCELLENT PAPER AWARDS"
+             Research “Joget License Management System”
+           </p>
+          `,
+          four02: `
+          <h3>Software project (Sillapa-Hatagrum for students)</h3>
+          <p>
+            November 11
+            2016 - Provincial Gold Medal Award from the work "Innovative tools for learning media in 360 degree video format (Tech
+            Lab By HV Roboclub)"
+          </p>`,
+          four03: `
+          <h3>Programming Competition (Sillapa-Hatagrum for students)</h3>
+          <p>
+            December 20
+            2015 - Provincial Gold Medal Award and Regional Bronze Medal Award
+          </p>
+          `,
+          four04: `
+          <h3>KMITL INNOVATIVE AWARD 2014 Project</h3>
+          <p>
+            September 15
+            2013 - Qualified for the top 10 national teams Win the royal trophy with the work "Sabai Sabai Cart"
+          </p>
+          `,
+          five01: `Contact/Inquiries`,
+          five02: `Go to fanpage`,
+          textabout: `About`
         }
       },
       th: {
@@ -179,7 +222,43 @@ i18next
           และ VPS ที่เหมาะสมกับงาน`,
           two05: 'เขียนโปรแกรมและแก้บัค',
           two06: `บริการเขียนโปรแกรมในรูปแบบ Console Application
-          และแก้บัคตามฟังก์ชั่นการทำงาน`
+          และแก้บัคตามฟังก์ชั่นการทำงาน`,
+          three01: `นายสุภัค พุกดำ เกียรตินิยมอันดับ 1
+            <br />วิศวกรรมซอฟต์แวร์ มหาวิทยาลัยบูรพา
+            <br />ปัจจุบันเป็น <span style="font-size: 1.5rem; text-decoration: underline;">นักวิชาการคอมพิวเตอร์</span>
+          `,
+          four01: `
+          <h3>งานประชุมวิชาการระดับปริญญาตรีด้านคอมพิวเตอร์ภูมิภาคอาเซียน AUCC ครั้งที่ 9</h3>
+          <p>
+            25 กุมภาพันธ์
+            2564 - รางวัล "EXCELLENT PAPER AWARDS"
+            งานวิจัย “ระบบการจัดการสิทธิ์การใช้งาน Joget”
+          </p>
+          `,
+          four02: `
+          <h3>โครงงานประเภทซอฟต์แวร์ (ศิลปหัตถกรรม)</h3>
+          <p>
+            11 พฤศจิกายน
+            2559 - รางวัลเหรียญทองระดับจังหวัดจากผลงาน "นวัตกรรมเครื่องมือสื่อการเรียนรู้ในรูปแบบวีดีโอ 360 องศา (Tech
+            Lab By HV Roboclub)"
+          </p>`,
+          four03: `
+          <h3>แข่งขันการเขียนโปรแกรม (ศิลปหัตถกรรม)</h3>
+          <p>
+            20 ธันวาคม
+            2558 - รางวัลเหรียญทองชนะเลิศระดับจังหวัดและรางวัลเหรียญทองแดงระดับภูมิภาค
+          </p>
+          `,
+          four04: `
+          <h3>โครงการ KMITL INNOVATIVE AWARD 2014</h3>
+          <p>
+            15 กันยายน
+            2556 - เข้ารอบ 10 ทีมสุดท้ายระดับประเทศ ชิงถ้วยพระราชทานด้วยผลงาน "รถเข็นสบาย สบาย"
+          </p>
+          `,
+          five01: `ติดต่อ/สอบถาม`,
+          five02: `ไปที่แฟนเพจ`,
+          textabout: `เกี่ยวกับ`
         }
       }
     }
@@ -234,13 +313,13 @@ const cursorSpan = document.querySelector('.cursor')
 
 const textArray =
   findGetParameter('lang') == 'en'
-    ?
-    [
-      'Make a website',
-      'Project Consulting',
-      'System development',
-      'Programming'
-    ] : ['อยากทำเว็บไซต์', 'ปรึกษาโปรเจค', 'พัฒนาระบบ', 'เรียนเขียนโปรแกรม']
+    ? [
+        'Make a website',
+        'Project Consulting',
+        'System development',
+        'Programming'
+      ]
+    : ['อยากทำเว็บไซต์', 'ปรึกษาโปรเจค', 'พัฒนาระบบ', 'เรียนเขียนโปรแกรม']
 const typingDelay = 200
 const erasingDelay = 100
 const newTextDelay = 750 // Delay between current and next text
