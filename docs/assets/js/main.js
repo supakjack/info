@@ -166,8 +166,7 @@ i18next
           two06: `Programming service in console application format
           and fix bugs according to functionality`,
           three01: `Mr. Supak Pukdam, Summa cumme Laude -
-          <br />Software Engineering Burapha University.
-          <br />Currently <span style="font-size: 1.5rem; text-decoration: underline;">Developer at Index Living Mall</span>`,
+          <br />Software Engineering Burapha University.`,
           four01: `
           <h3>The 9th AUCC ASEAN Undergraduate Computing Conference</h3>
            <p>
@@ -225,7 +224,6 @@ i18next
           และแก้บัคตามฟังก์ชั่นการทำงาน`,
           three01: `นายสุภัค พุกดำ เกียรตินิยมอันดับ 1
             <br />วิศวกรรมซอฟต์แวร์ มหาวิทยาลัยบูรพา
-            <br />ปัจจุบันเป็น <span style="font-size: 1.5rem; text-decoration: underline;">Developer ที่ Index Living Mall</span>
           `,
           four01: `
           <h3>งานประชุมวิชาการระดับปริญญาตรีด้านคอมพิวเตอร์ภูมิภาคอาเซียน AUCC ครั้งที่ 9</h3>
